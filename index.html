@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="encriptador__header">
+      <img class="logo" src="./imagenes/logo.jpg" alt="logo aulura" />
+    </header>
+    <main class="main">
+      <section class="encriptar">
+        <textarea
+          class="encriptador__area"
+          name="texto"
+          placeholder="Ingrese el texto aqui"
+        ></textarea>
+        <div>
+          <span class="encriptador__info"
+            ><img src="./imagenes/bi_exclamation-circle-fill.jpg" />
+            Solo letras minúsculas y sin acentos
+          </span>
+          <div class="encriptador__botones">
+            <button class="boton-encriptar">Encriptar</button>
+            <button class="boton-desencriptar">Desencriptar</button>
+          </div>
+        </div>
+      </section>
+      <section class="encriptado">
+        <div class="textarea">
+          <textarea class="texto-encriptado" name="texto-encriptado"></textarea>
+        </div>
+
+        <div>
+          <img class="encriptador__imagen" src="./imagenes/Muñeco.png" alt="" />
+        </div>
+        <div class="contenedor-boton-copiar">
+          <button class="boton-copiar" id="copiar">Copiar</button>
+        </div>
+        <div class="encriptador__estado">
+          <p class="encriptador__estado--info">Ningún mensaje fue encontrado</p>
+          <p class="encriptador__estado--indicacion">
+            Ingresa el texto que desees encriptar o desencriptar.
+          </p>
+        </div>
+      </section>
+    </main>
+  </body>
+  <script src="./script.js"></script>
+</html>
